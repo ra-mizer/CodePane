@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Recipe Hub | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="contact">
+  <main>
+    <section class="section">
+      <h1 class="section-title">Contact Us</h1>
+      <p class="section-intro">Have a question about a recipe, a dish you&rsquo;d love to see on the site, or just want to share how your first loaf of banana bread turned out? Send a note below and it will go straight to the site&rsquo;s owner, Rachel.</p>
+
+      <div class="contact-grid">
+        <div class="panel contact-card" style="margin-top:0">
+          <h2>Reach Us</h2>
+          <dl>
+            <dt>Email</dt><dd><a href="mailto:hello@recipehubraleigh.example">hello@recipehubraleigh.example</a></dd>
+            <dt>Phone</dt><dd>(919) 555-0142</dd>
+            <dt>Studio</dt><dd>123 Saffron Lane, Suite 4<br>Raleigh, NC 27601</dd>
+            <dt>Hours</dt><dd>Mon&ndash;Fri, 9am&ndash;5pm ET</dd>
+          </dl>
+          <div class="tip">
+            <strong>Press &amp; partnerships:</strong> <a href="mailto:press@recipehubraleigh.example">press@recipehubraleigh.example</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Send a Message</h2>
+          <div class="form-success" id="formSuccess" role="status"></div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cName">Your Name *</label>
+              <input id="cName" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="cEmail">Email Address *</label>
+              <input id="cEmail" name="email" type="email" required autocomplete="email">
+            </div>
+            <div class="field full">
+              <label for="cTopic">Topic</label>
+              <select id="cTopic" name="topic">
+                <option>General question</option>
+                <option>Help with a recipe</option>
+                <option>Recipe request</option>
+                <option>Collaboration / press</option>
+                <option>Report a problem with the site</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="cMessage">Message *</label>
+              <textarea id="cMessage" name="message" required placeholder="What's cooking?"></textarea>
+            </div>
+            <label class="checkbox full"><input type="checkbox" name="newsletter"> Send me new beginner recipes by email (about twice a month).</label>
+            <div class="full"><button class="btn" type="submit">Send Message</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

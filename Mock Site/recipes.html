@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Recipe Hub | Recipe Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="recipes">
+  <main>
+    <section class="section">
+      <h1 class="section-title">Recipe Catalog</h1>
+      <p class="section-intro">Every recipe on The Recipe Hub in one place. Search by name or ingredient, narrow things down by cuisine, meal type or skill level, and click any dish to open the full recipe.</p>
+
+      <form class="filters" onsubmit="return false">
+        <div class="field search">
+          <label for="fSearch">Search</label>
+          <input id="fSearch" type="search" placeholder="Try &quot;chicken&quot; or &quot;garlic&quot;&hellip;">
+        </div>
+        <div class="field">
+          <label for="fCuisine">Cuisine</label>
+          <select id="fCuisine"><option value="">All cuisines</option></select>
+        </div>
+        <div class="field">
+          <label for="fCategory">Meal Type</label>
+          <select id="fCategory"><option value="">All meals</option></select>
+        </div>
+        <div class="field">
+          <label for="fDifficulty">Skill Level</label>
+          <select id="fDifficulty"><option value="">Any level</option><option>Easy</option><option>Medium</option></select>
+        </div>
+        <div class="field">
+          <label>View</label>
+          <div class="view-toggle">
+            <button type="button" data-view="grid" class="active">Gallery</button>
+            <button type="button" data-view="list">List</button>
+            <button type="button" id="resetFilters" title="Clear filters">Reset</button>
+          </div>
+        </div>
+      </form>
+
+      <p class="result-count" id="resultCount"></p>
+      <div class="card-grid" id="catalogGrid"></div>
+    </section>
+  </main>
+</body>
+</html>

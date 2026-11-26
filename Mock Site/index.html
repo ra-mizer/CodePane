@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Recipe Hub | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="home">
+  <main>
+    <div class="slideshow" id="slideshow" aria-label="Newly added dishes"></div>
+
+    <div class="two-col">
+      <section class="section">
+        <h1 class="section-title">Newest Recipes</h1>
+        <ul class="newest-list" id="newestList"></ul>
+        <p style="margin-top:1.25rem"><a class="btn outline" href="recipes.html">Browse all recipes &rarr;</a></p>
+      </section>
+
+      <aside class="section">
+        <h2 class="section-title">New to Cooking?</h2>
+        <p>Welcome to <strong>The Recipe Hub</strong>, a kitchen-friendly corner of the internet made for people who are just getting started. Every recipe here uses everyday ingredients, simple tools and clear step-by-step instructions, with a beginner tip tucked into each one so you learn a little something every time you cook.</p>
+        <p>Not sure where to begin? Look for the <span class="badge easy">Easy</span> badge, pick something that makes you hungry, and take it one step at a time. Mistakes are just part of the recipe.</p>
+      </aside>
+    </div>
+
+    <section class="section">
+      <h2 class="section-title">Watch &amp; Learn: Cooking Videos</h2>
+      <p class="section-intro">Prefer to see it done first? Our video walkthroughs show every chop, stir and sizzle so you can cook along at your own pace.</p>
+      <div class="video-grid" id="videoGrid"></div>
+    </section>
+  </main>
+</body>
+</html>

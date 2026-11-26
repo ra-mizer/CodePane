@@ -1,0 +1,9 @@
+# Local development assets and notes
+/Dev/
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
