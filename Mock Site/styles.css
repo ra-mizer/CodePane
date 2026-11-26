@@ -159,8 +159,10 @@ main {
 .section-title { margin-bottom: 1.25rem; }
 .section-intro { max-width: 760px; }
 
-/* Smaller version of the site-name header style — used by every section header */
-.section-title {
+/* Smaller version of the site-name header style — used by every section header
+   and (smaller still) by the headings inside panels */
+.panel > h2, .panel > h3 { margin-bottom: 1rem; }
+.section-title, .panel > h2, .panel > h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
   font-variant: small-caps;
@@ -172,12 +174,18 @@ main {
   gap: 0.6em;
 }
 .section-title::before,
-.section-title::after {
+.section-title::after,
+.panel > h2::before, .panel > h2::after,
+.panel > h3::before, .panel > h3::after {
   content: "";
   flex: 1;
   min-width: 20px;
   height: 2px;
   background: var(--accent-mid);
+}
+.panel > h2, .panel > h3 {
+  font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+  letter-spacing: 0.08em;
 }
 
 /* ---------- Dish "photo" placeholders ---------- */
